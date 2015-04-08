@@ -1,0 +1,44 @@
+{
+    "textures" : [
+        { "id" : "assets/texture1.png" },
+        { "id" : "assets/texture2.png" },
+        { "id" : "assets/texture3.png" },
+        { "id" : "assets/texture4.jpg" },
+        { "id" : "assets/texture5.png" }
+    ],
+    "shaders" : [
+        { "ps_id":"assets/shader1.glsl" },
+        { "ps_id":"assets/shader2.glsl" },
+        { "ps_id":"assets/shader3.glsl" }
+    ],
+    "fonts" : [
+        { "id" : "assets/fonts/font1.fnt" },
+        { "id" : "assets/fonts/font2.fnt" },
+        { "id" : "assets/fonts/font3.fnt" },
+        { "id" : "assets/fonts/font4.fnt" },
+        { "id" : "assets/fonts/font5.fnt", "texture_path":"assets/fonts/font5tex/" }
+    ],
+    "sounds" : [
+        { "id" : "assets/sound1.ogg", "name" : "sound1", "is_stream" : true },
+        { "id" : "assets/music/Small_Sleepy_Town.mp3", "name" : "Small_Sleepy_Town", "is_stream" : false},
+        { "id" : "assets/ping_pong_8bit_beeep.ogg", "name" : "beep", "is_stream" : false}
+    ],
+    "text" : [
+        { "id" : "assets/text1.txt" },
+        { "id" : "assets/text2.txt" },
+        { "id" : "assets/text3.txt" },
+        { "id" : "assets/text4.txt" },
+        { "id" : "assets/text5.txt" }
+    ],
+    "json" : [
+        { "id" : "assets/json1.json" },
+        { "id" : "assets/json2.json" }
+    ],
+    "data" : [
+        { "id" : "assets/bytes1" },
+        { "id" : "assets/bytes2" },
+        { "id" : "assets/bytes3" },
+        { "id" : "assets/bytes4" },
+        { "id" : "assets/bytes5" }
+    ]
+}

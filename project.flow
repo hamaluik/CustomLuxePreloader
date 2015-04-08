@@ -1,0 +1,36 @@
+{
+
+  luxe:{
+    window: {
+      width:640,
+      height:640,
+      title:'CustomLuxePreloader',
+      fullscreen:false,
+      resizable:true,
+      borderless:false
+    }
+  },
+
+  project : {
+    name : 'CustomLuxePreloader',
+    version : '0.0.1',
+    author : 'FuzzyWuzzie',
+
+    app : {
+      name : 'CustomLuxePreloader',
+      package : 'com.blazingmammothgames.luxe'
+    },
+
+    build : {
+      dependencies : {
+        luxe : '*',
+      }
+    },
+
+    files : {
+      assets : 'assets/'
+    }
+
+  }
+
+}
