@@ -3,26 +3,26 @@ import luxe.Color;
 import luxe.Input;
 import luxe.Parcel;
 import luxe.ParcelProgress;
-import luxe.resource.Resource.SoundResource;
+import luxe.resource.Resource;
 
 class Main extends luxe.Game {
 
     override function ready() {
     	// load the parcel
-    	Luxe.loadJSON("assets/parcel.json", function(jsonParcel) {
-    		var parcel = new Parcel();
-    		parcel.from_json(jsonParcel.json);
+        Luxe.resources.load_json('assets/parcel.json').then(function(json:JSONResource) {
+            var parcel = new Parcel();
+            parcel.from_json(json.asset.json);
 
-    		// show a loading bar
-    		//new ParcelProgress({
-    		new DigitalCircleParcelProgress({
-    			parcel: parcel,
-    			oncomplete: assetsLoaded
-    		});
-    		
-    		// start loading!
-    		parcel.load();
-    	});
+            // show a loading bar
+            //new ParcelProgress({
+            new DigitalCircleParcelProgress({
+                parcel: parcel,
+                oncomplete: assetsLoaded
+            });
+            
+            // start loading!
+            parcel.load();
+        });
 
     } //ready
 
